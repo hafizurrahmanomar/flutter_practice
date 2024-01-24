@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_01_text/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_01_text/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_01_text/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_02_image/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_02_image/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_02_image/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_03_row_cloumn_dialogs_more/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_03_row_cloumn_dialogs_more/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_06_class_03_row_cloumn_dialogs_more/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_02_listtile_listview/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_02_listtile_listview/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_02_listtile_listview/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_03_grid_view/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_03_grid_view/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_07_class_03_grid_view/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_08_class_4_full_widget/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_08_class_4_full_widget/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_08_class_4_full_widget/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_01_warp_mideaqury_layout_and_orientation_builder/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_01_warp_mideaqury_layout_and_orientation_builder/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_01_warp_mideaqury_layout_and_orientation_builder/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_02_aspect_ratio_expanded_fractionally_sizedBox/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_02_aspect_ratio_expanded_fractionally_sizedBox/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_09_class_02_aspect_ratio_expanded_fractionally_sizedBox/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_01_navigation/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_01_navigation/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_01_navigation/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_02_theme_data_cupertino_widge_intro/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_02_theme_data_cupertino_widge_intro/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_02_theme_data_cupertino_widge_intro/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/build" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
