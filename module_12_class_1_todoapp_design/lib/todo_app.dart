@@ -1,6 +1,9 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:helloworld/todo_list_screen.dart';
+import 'package:module_12_class_1_todoapp_design/todo_list_screen.dart';
+
+import 'add_new_todo_screen.dart';
+
 
 class TodoApp extends StatelessWidget {
   const TodoApp({Key? key}) : super(key: key);
@@ -9,7 +12,7 @@ class TodoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     /// MaterialApp Section Start
     return MaterialApp(
-      home: TodoListScreen(),
+      home: const TodoListScreen(),
 
       ///ThemeData Section Start
 
@@ -17,10 +20,12 @@ class TodoApp extends StatelessWidget {
           colorSchemeSeed: Colors.blue,
 
           /// AppBarTheme Section Start
-          appBarTheme: AppBarTheme(
+          appBarTheme: const AppBarTheme(
             backgroundColor: Colors.blue,
             centerTitle: true,
+            /// IconThemeData section Start
             iconTheme: IconThemeData(color: Colors.amberAccent),
+            /// IconThemeData section End
             titleTextStyle: TextStyle(
                 color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
           ),
@@ -58,12 +63,12 @@ class TodoApp extends StatelessWidget {
               foregroundColor: Colors.white,
               shadowColor: Colors.grey,
               elevation: 7.0,
-              padding: EdgeInsets.all(20.00),
-              textStyle: TextStyle(
+              padding: const EdgeInsets.all(20.00),
+              textStyle: const TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic),
-              minimumSize: Size(50, 30),
+              minimumSize: const Size(50, 30),
             ),
           )
 

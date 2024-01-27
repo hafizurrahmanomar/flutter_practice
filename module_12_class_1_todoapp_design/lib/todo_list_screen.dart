@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/add_new_todo_screen.dart';
+import 'package:module_12_class_1_todoapp_design/add_new_todo_screen.dart';
+
+import 'edit_todo_screen.dart';
 
 class TodoListScreen extends StatefulWidget {
   const TodoListScreen({Key? key}) : super(key: key);
@@ -9,6 +11,7 @@ class TodoListScreen extends StatefulWidget {
 }
 
 class _TodoListScreenState extends State<TodoListScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +20,15 @@ class _TodoListScreenState extends State<TodoListScreen> {
           "Todo List",
         ),
       ),
-      body: ListView.builder(
+      body: ListView.separated(
+        separatorBuilder: (context,index){
+          return const Divider(
+            color: Colors.amberAccent,
+            height: 14,
+            indent: 16,
+            endIndent: 10,
+          );
+        },
           itemCount: 10,
           itemBuilder: (context, index) {
             return ListTile(
@@ -32,11 +43,14 @@ class _TodoListScreenState extends State<TodoListScreen> {
               trailing: Wrap(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    /// onPressed code variable step-02
+                  onPressed: showDeletConfirmationDialog,
+
                     icon: const Icon(Icons.delete_outline_outlined),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder:(context) =>const EditTodoScreen(),),);
+                    },
                     icon: const Icon(Icons.edit),
                   ),
                 ],
@@ -56,5 +70,29 @@ class _TodoListScreenState extends State<TodoListScreen> {
         child: const Icon(Icons.add),
       ),
     );
+
+  }
+/// onPressed code details step-01
+  void showDeletConfirmationDialog(){
+    onPressed: () {
+      showDialog(context: context, builder: (context){
+        return AlertDialog(
+          title: const Text("To Do  list Dialog"),
+          content: const Text("Are you sure you want to back my app"),
+          actions: [
+            TextButton(
+              onPressed: (){
+                Navigator.pop(context);
+              }, child: const Text("Cancel",style: TextStyle(color: Colors.red),),),
+            TextButton(onPressed: (){
+              Navigator.pop(context);
+            }, child: const Text("Yes"),),
+
+          ],
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10),),
+
+        );
+      },);
+    };
   }
 }

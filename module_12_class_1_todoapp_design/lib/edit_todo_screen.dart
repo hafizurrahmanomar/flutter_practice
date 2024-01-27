@@ -1,23 +1,26 @@
 
 import 'package:flutter/material.dart';
 
-class AddNewTodoScreen extends StatefulWidget {
-  const AddNewTodoScreen({Key? key}) : super(key: key);
+class EditTodoScreen extends StatefulWidget {
+  const EditTodoScreen({Key? key}) : super(key: key);
 
   @override
-  State<AddNewTodoScreen> createState() => _AddNewTodoScreenState();
+  State<EditTodoScreen> createState() => _AddNewTodoScreenState();
 }
 
-class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
+class _AddNewTodoScreenState extends State<EditTodoScreen> {
   /// _formKey Create for Validation
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  /// Controller create_1
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _descriptionController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
-        title: const Text("New To Do List"),
+        title: const Text("Edit To Do"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -27,6 +30,7 @@ class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
           child: Column(
             children: [
               TextFormField(
+                /// Controller set_2
                 controller: _titleController,
                 decoration: const InputDecoration(
                   hintText: "Title",
@@ -45,7 +49,8 @@ class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
               ),
               const SizedBox(height: 16),
               TextFormField(
-                controller: _descriptionController,
+                /// Controller set_2
+                controller:  _descriptionController,
                 maxLines: 5,
                 maxLength: 150,
                 decoration: const InputDecoration(hintText: "Description"),
@@ -74,10 +79,10 @@ class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
                     if (_formKey.currentState!.validate()) {}
                     ;
 
-                    ///back to before screen
-                    Navigator.pop(context);
+                    ///back to before scrren
+                   Navigator.pop(context);
                   },
-                  child: const Text("Add"),
+                  child: const Text("Updat"),
                 ),
               ),
             ],
@@ -86,6 +91,7 @@ class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
       ),
     );
   }
+  /// Controller dispose step_03
   @override
   void dispose() {
     _titleController.dispose();
