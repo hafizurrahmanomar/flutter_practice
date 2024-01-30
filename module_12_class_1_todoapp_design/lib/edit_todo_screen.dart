@@ -1,88 +1,84 @@
 
 import 'package:flutter/material.dart';
+import 'package:module_12_class_1_todoapp_design/todo.dart';
 
 class EditTodoScreen extends StatefulWidget {
-  const EditTodoScreen({Key? key}) : super(key: key);
+  const EditTodoScreen({super.key, required this.todo});
+
+  final Todo todo;
 
   @override
-  State<EditTodoScreen> createState() => _AddNewTodoScreenState();
+  State<EditTodoScreen> createState() => _EditTodoScreenState();
 }
 
-class _AddNewTodoScreenState extends State<EditTodoScreen> {
-  /// _formKey Create for Validation
+class _EditTodoScreenState extends State<EditTodoScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  /// Controller create_1
-  final TextEditingController _titleController = TextEditingController();
-  final TextEditingController _descriptionController = TextEditingController();
+  final TextEditingController _titleTEController = TextEditingController();
+  late final TextEditingController _descriptionTEController =
+  TextEditingController(text: widget.todo.description);
+
+  @override
+  void initState() {
+    super.initState();
+    _titleTEController.text = widget.todo.title;
+    _descriptionTEController.text = widget.todo.description;
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
-        title: const Text("Edit To Do"),
+        title: const Text(
+          'Edit todo',
+        ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16),
         child: Form(
-          ///_formKey set for validation
           key: _formKey,
           child: Column(
             children: [
               TextFormField(
-                /// Controller set_2
-                controller: _titleController,
+                controller: _titleTEController,
                 decoration: const InputDecoration(
-                  hintText: "Title",
+                  hintText: 'Title',
                 ),
-
-                ///validator logic create  start
                 validator: (String? value) {
                   final v = value ?? '';
                   if (v.trim().isEmpty) {
-                    return 'Enter your title here';
+                    return 'Enter your title';
                   }
                   return null;
                 },
-
-                ///validator logic create End
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 16,),
               TextFormField(
-                /// Controller set_2
-                controller:  _descriptionController,
+                controller: _descriptionTEController,
                 maxLines: 5,
-                maxLength: 150,
-                decoration: const InputDecoration(hintText: "Description"),
-
-                ///validator logic create  start
+                maxLength: 100,
+                decoration: const InputDecoration(
+                  hintText: 'Description',
+                ),
                 validator: (String? value) {
-                  //final v = value ?? '';
                   if (value?.trim().isEmpty ?? true) {
-                    return 'Enter your title here';
+                    return 'Enter your description';
                   }
                   return null;
                 },
-
-                ///validator logic create End
               ),
-              const SizedBox(height: 16),
-
-              ///SizedBox widget use for button
+              const SizedBox(height: 16,),
               SizedBox(
-                /// below two code same working
-                //width: double.infinity,
+                // width: double.infinity,
                 width: MediaQuery.sizeOf(context).width,
                 child: ElevatedButton(
                   onPressed: () {
-                    ///validation key apply
-                    if (_formKey.currentState!.validate()) {}
-                    ;
-
-                    ///back to before scrren
-                   Navigator.pop(context);
+                    if (_formKey.currentState!.validate()) {
+                      Todo todo = Todo(_titleTEController.text.trim(),
+                          _descriptionTEController.text.trim(), DateTime.now());
+                      Navigator.pop(context, todo);
+                    }
                   },
-                  child: const Text("Updat"),
+                  child: const Text('Update'),
                 ),
               ),
             ],
@@ -91,11 +87,11 @@ class _AddNewTodoScreenState extends State<EditTodoScreen> {
       ),
     );
   }
-  /// Controller dispose step_03
+
   @override
   void dispose() {
-    _titleController.dispose();
-    _descriptionController.dispose();
+    _titleTEController.dispose();
+    _descriptionTEController.dispose();
     super.dispose();
   }
 }

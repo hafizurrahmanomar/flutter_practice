@@ -1,98 +1,147 @@
 import 'package:flutter/material.dart';
 import 'package:module_12_class_1_todoapp_design/add_new_todo_screen.dart';
+import 'package:module_12_class_1_todoapp_design/todo.dart';
 
 import 'edit_todo_screen.dart';
 
 class TodoListScreen extends StatefulWidget {
-  const TodoListScreen({Key? key}) : super(key: key);
+  const TodoListScreen({super.key});
 
   @override
   State<TodoListScreen> createState() => _TodoListScreenState();
 }
 
 class _TodoListScreenState extends State<TodoListScreen> {
+  List<Todo> todoList = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Todo List",
+          'Todos',
         ),
       ),
-      body: ListView.separated(
-        separatorBuilder: (context,index){
-          return const Divider(
-            color: Colors.amberAccent,
-            height: 14,
-            indent: 16,
-            endIndent: 10,
-          );
-        },
-          itemCount: 10,
+      body: Visibility(
+        visible: todoList.isNotEmpty,
+        replacement: const Center(
+          child: Text('Todo list empty!'),
+        ),
+        child: ListView.separated(
+          itemCount: todoList.length,
           itemBuilder: (context, index) {
-            return ListTile(
-              title: const Text("To Do List"),
-              subtitle: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("To Do Body"),
-                  Text("time"),
-                ],
-              ),
-              trailing: Wrap(
-                children: [
-                  IconButton(
-                    /// onPressed code variable step-02
-                  onPressed: showDeletConfirmationDialog,
-
-                    icon: const Icon(Icons.delete_outline_outlined),
-                  ),
-                  IconButton(
-                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder:(context) =>const EditTodoScreen(),),);
-                    },
-                    icon: const Icon(Icons.edit),
-                  ),
-                ],
-              ),
+            return _buildTodoListTile(index);
+          },
+          separatorBuilder: (context, index) {
+            return Divider(
+              color: Colors.grey.shade200,
+              height: 12,
+              indent: 16,
+              // endIndent: 16,
             );
-          }),
+          },
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.deepOrange,
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const AddNewTodoScreen(),
-            ),
-          );
-        },
+        onPressed: _onTapAddNewTodoFAB,
+        backgroundColor: Colors.amber,
         child: const Icon(Icons.add),
       ),
     );
-
   }
-/// onPressed code details step-01
-  void showDeletConfirmationDialog(){
-    onPressed: () {
-      showDialog(context: context, builder: (context){
+
+  ListTile _buildTodoListTile(int index) {
+    return ListTile(
+      title: Text(todoList[index].title),
+      subtitle: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(todoList[index].description),
+          Text(todoList[index].dateTime.toString()),
+        ],
+      ),
+      trailing: Wrap(
+        children: [
+          IconButton(
+              onPressed: () => showDeleteConfirmationDialog(index),
+              icon: const Icon(Icons.delete_forever_outlined)),
+          IconButton(
+            onPressed: () => _onTapEditTodo(index),
+            icon: const Icon(Icons.edit),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _onTapEditTodo(int index) async {
+    final Todo? updatedTodo = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EditTodoScreen(
+          todo: todoList[index],
+        ),
+      ),
+    );
+    if (updatedTodo != null) {
+      todoList[index] = updatedTodo;
+      setState(() {});
+    }
+  }
+
+  Future<void> _onTapAddNewTodoFAB() async {
+    // Asynchronous Programming
+    // Future
+    // await
+    // async
+    final Todo? result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const AddNewTodoScreen(),
+      ),
+    );
+    if (result != null) {
+      todoList.add(result);
+      setState(() {});
+    }
+  }
+
+  void showDeleteConfirmationDialog(int index) {
+    showDialog(
+      context: context,
+      builder: (context) {
         return AlertDialog(
-          title: const Text("To Do  list Dialog"),
-          content: const Text("Are you sure you want to back my app"),
+          title: const Text('Delete Todo'),
+          content: const Text('Are you sure you want to delete?'),
           actions: [
             TextButton(
-              onPressed: (){
+              onPressed: () {
                 Navigator.pop(context);
-              }, child: const Text("Cancel",style: TextStyle(color: Colors.red),),),
-            TextButton(onPressed: (){
-              Navigator.pop(context);
-            }, child: const Text("Yes"),),
-
+              },
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                _removeTodo(index);
+                Navigator.pop(context);
+              },
+              child: const Text(
+                'Yes, delete',
+                style: TextStyle(
+                  color: Colors.red,
+                ),
+              ),
+            ),
           ],
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10),),
-
+          shape:
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         );
-      },);
-    };
+      },
+    );
+  }
+
+  void _removeTodo(int index) {
+    todoList.removeAt(index);
+    setState(() {});
   }
 }

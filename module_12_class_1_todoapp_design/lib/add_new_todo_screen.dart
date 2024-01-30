@@ -1,83 +1,77 @@
 
 import 'package:flutter/material.dart';
+import 'package:module_12_class_1_todoapp_design/todo.dart';
 
 class AddNewTodoScreen extends StatefulWidget {
-  const AddNewTodoScreen({Key? key}) : super(key: key);
+  const AddNewTodoScreen({super.key});
 
   @override
   State<AddNewTodoScreen> createState() => _AddNewTodoScreenState();
 }
 
 class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
-  /// _formKey Create for Validation
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  final TextEditingController _titleController = TextEditingController();
-  final TextEditingController _descriptionController = TextEditingController();
+  final TextEditingController _titleTEController = TextEditingController();
+  final TextEditingController _descriptionTEController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("New To Do List"),
+        title: const Text(
+          'Add new todo',
+        ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16),
         child: Form(
-          ///_formKey set for validation
           key: _formKey,
           child: Column(
             children: [
               TextFormField(
-                controller: _titleController,
+                controller: _titleTEController,
                 decoration: const InputDecoration(
-                  hintText: "Title",
+                  hintText: 'Title',
                 ),
-
-                ///validator logic create  start
                 validator: (String? value) {
                   final v = value ?? '';
                   if (v.trim().isEmpty) {
-                    return 'Enter your title here';
+                    return 'Enter your title';
                   }
                   return null;
                 },
-
-                ///validator logic create End
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 16,),
               TextFormField(
-                controller: _descriptionController,
+                controller: _descriptionTEController,
                 maxLines: 5,
-                maxLength: 150,
-                decoration: const InputDecoration(hintText: "Description"),
-
-                ///validator logic create  start
+                maxLength: 100,
+                decoration: const InputDecoration(
+                  hintText: 'Description',
+                ),
                 validator: (String? value) {
-                  //final v = value ?? '';
                   if (value?.trim().isEmpty ?? true) {
-                    return 'Enter your title here';
+                    return 'Enter your description';
                   }
                   return null;
                 },
-
-                ///validator logic create End
               ),
-              const SizedBox(height: 16),
-
-              ///SizedBox widget use for button
+              const SizedBox(height: 16,),
               SizedBox(
-                /// below two code same working
-                //width: double.infinity,
+                // width: double.infinity,
                 width: MediaQuery.sizeOf(context).width,
                 child: ElevatedButton(
                   onPressed: () {
-                    ///validation key apply
-                    if (_formKey.currentState!.validate()) {}
-                    ;
-
-                    ///back to before screen
-                    Navigator.pop(context);
+                    if (_formKey.currentState!.validate()) {
+                      Todo todo = Todo(
+                        _titleTEController.text.trim(),
+                        _descriptionTEController.text.trim(),
+                        DateTime.now(),
+                      );
+                      Navigator.pop(context, todo);
+                    }
                   },
-                  child: const Text("Add"),
+                  child: const Text('Add'),
                 ),
               ),
             ],
@@ -86,10 +80,11 @@ class _AddNewTodoScreenState extends State<AddNewTodoScreen> {
       ),
     );
   }
+
   @override
   void dispose() {
-    _titleController.dispose();
-    _descriptionController.dispose();
+    _titleTEController.dispose();
+    _descriptionTEController.dispose();
     super.dispose();
   }
 }
