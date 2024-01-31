@@ -6,17 +6,23 @@ class CRUDApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        /// AppBarTheme Start
           appBarTheme: const AppBarTheme(
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white
           ),
+          /// AppBarTheme End
+          /// InputDecorationTheme Start
           inputDecorationTheme: const InputDecorationTheme(
             border: OutlineInputBorder(),
             enabledBorder: OutlineInputBorder(),
             focusedBorder: OutlineInputBorder(),
             errorBorder: OutlineInputBorder(),
           ),
+          /// InputDecorationTheme End
+          /// ElevatedButtonThemeData Start
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.amber,
@@ -28,6 +34,9 @@ class CRUDApp extends StatelessWidget {
                 )
             ),
           )
+
+        /// ElevatedButtonThemeData End
+
       ),
       home: const ProductListScreen(),
     );
