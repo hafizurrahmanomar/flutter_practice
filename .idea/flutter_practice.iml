@@ -48,6 +48,12 @@
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

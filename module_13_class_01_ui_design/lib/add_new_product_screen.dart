@@ -8,12 +8,16 @@ class AddNewProductScreen extends StatefulWidget {
 }
 
 class _AddNewProductScreenState extends State<AddNewProductScreen> {
+  /// controller create
+
   final TextEditingController _nameTEController = TextEditingController();
   final TextEditingController _codeTEController = TextEditingController();
   final TextEditingController _unitPriceTEController = TextEditingController();
   final TextEditingController _quantityTEController = TextEditingController();
   final TextEditingController _totalPriceTEController = TextEditingController();
   final TextEditingController _imageTEController = TextEditingController();
+
+  /// _formKey create for validation
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override

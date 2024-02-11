@@ -43,6 +43,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        ///_onTapAddNewTodoFAB add
         onPressed: _onTapAddNewTodoFAB,
         backgroundColor: Colors.amber,
         child: const Icon(Icons.add),
@@ -88,7 +89,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       setState(() {});
     }
   }
-
+/// _onTapAddNewTodoFAB button function Start
   Future<void> _onTapAddNewTodoFAB() async {
     // Asynchronous Programming
     // Future
@@ -97,7 +98,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
     final Todo? result = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => const AddNewTodoScreen(),
+        builder: (context) => const AddNewTodoScreen(),///go to AddNewTodoScreen to product add
       ),
     );
     if (result != null) {
@@ -105,6 +106,8 @@ class _TodoListScreenState extends State<TodoListScreen> {
       setState(() {});
     }
   }
+
+  /// _onTapAddNewTodoFAB button function End
 
   void showDeleteConfirmationDialog(int index) {
     showDialog(
