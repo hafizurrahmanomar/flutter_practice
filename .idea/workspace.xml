@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd4a6ec6-1e83-4579-a854-bb47203a0b51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Montserrat/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/Roboto/Roboto-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/images/background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/assets/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/lib/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/lib/presentation/screens/authentication/sign_in_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_15_task_manager/lib/presentation/screens/authentication/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flutter_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flutter_practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_15_task_manager/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/module_15_task_manager/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_15_task_manager/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/module_15_task_manager/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_15_task_manager/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/module_15_task_manager/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record_12_sum_app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/record_12_sum_app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/record_12_sum_app/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record_12_sum_app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/record_12_sum_app/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record_12_sum_app/.idea/record_12_sum_app.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2cxrviVtiUiUQ5nxQE6ml19LMsq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/hafiz/webappdeveloperbd/flutter_practice/OtherProject",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd4a6ec6-1e83-4579-a854-bb47203a0b51" name="Changes" comment="" />
+      <created>1709064305275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709064305275</updated>
+    </task>
+    <servers />
+  </component>
+</project>
