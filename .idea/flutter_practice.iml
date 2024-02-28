@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/OtherProject/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/OtherProject/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/OtherProject/build" />
       <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/hafizurrahmanomar/build" />
@@ -33,6 +36,18 @@
       <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/module_10_livetest_newsfead_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_14_livetest/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_14_livetest/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_14_livetest/build" />
+      <excludeFolder url="file://$MODULE_DIR$/module_15_task_manager/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/module_15_task_manager/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/module_15_task_manager/build" />
       <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/module_7_class_01_buttons_textfield_container_form/build" />
@@ -45,19 +60,17 @@
       <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/module_8_class_3_navigation_route_management/build" />
+      <excludeFolder url="file://$MODULE_DIR$/photo_gallery_app_assinment/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/photo_gallery_app_assinment/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/photo_gallery_app_assinment/build" />
+      <excludeFolder url="file://$MODULE_DIR$/record_12_sum_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/record_12_sum_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/record_12_sum_app/build" />
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/shopping_cart_app/build" />
-      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/module_13_class_01_ui_design/build" />
-      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/module_12_class_1_todoapp_design/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Dart SDK" level="project" />
-    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
