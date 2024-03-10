@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taskmanager/presentation/screens/authentication/sign_in_screen.dart';
 
-import '../../wedget/background_widget.dart';
+import '../../wedget/app_background.dart';
 
 class SetPasswordScreen extends StatefulWidget {
   const SetPasswordScreen({super.key});

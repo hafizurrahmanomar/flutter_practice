@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanager/presentation/screens/authentication/sign_up_screen.dart';
-import '../../wedget/background_widget.dart';
+import '../../wedget/app_background.dart';
 import 'email_verification_screen.dart';
 
 class SignInScreen extends StatefulWidget {
