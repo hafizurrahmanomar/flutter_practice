@@ -13,8 +13,10 @@ class BackgroundWidget extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+
           /// background add
           SvgPicture.asset(
+
             ///from utility/asset_path
             AssetPath.backgroundSvg,
             height: double.infinity,

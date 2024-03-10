@@ -5,7 +5,7 @@ import 'package:taskmanager/presentation/screens/authentication/set_password_scr
 import 'package:taskmanager/presentation/screens/authentication/sign_in_screen.dart';
 
 import '../../utility/app_colors.dart';
-import '../../wedget/background_widget.dart';
+import '../../wedget/app_background.dart';
 
 class PinVerificationScreen extends StatefulWidget {
   const PinVerificationScreen({super.key});

@@ -21,7 +21,8 @@ class _TaskManagerState extends State<TaskManager> {
       home: const SplashScreen(),
       theme: ThemeData(
           useMaterial3: true,
-        /// Default Font Family
+
+          /// Default Font Family
           fontFamily: 'Roboto',
 
           /// InputDecorationTheme
@@ -29,13 +30,12 @@ class _TaskManagerState extends State<TaskManager> {
             fillColor: Colors.white,
             filled: true,
             contentPadding:
-            const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             border: OutlineInputBorder(
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-
 
           /// ElevatedButtonThemeData
           elevatedButtonTheme: ElevatedButtonThemeData(
@@ -45,9 +45,8 @@ class _TaskManagerState extends State<TaskManager> {
                   ),
                   backgroundColor: AppColors.themeColor,
                   foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12)
-              )
-          ),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 12))),
 
           /// TextButtonThemeData
           textButtonTheme: TextButtonThemeData(
@@ -56,25 +55,23 @@ class _TaskManagerState extends State<TaskManager> {
                   textStyle: const TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
-                  )
-              )
-          ),
-
-
+                  ))),
 
           /// TextTheme data
           textTheme: const TextTheme(
-           titleLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
+            titleLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
             bodySmall: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+            titleMedium: TextStyle(fontSize: 16, color: Colors.white),
+            titleSmall: TextStyle(fontSize: 12,
+                color: Colors.white,
+                fontWeight: FontWeight.w400),
+
           ),
 
           ///
           chipTheme: ChipThemeData(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)
-              )
-          )
-      ),
+                  borderRadius: BorderRadius.circular(50)))),
     );
   }
 }
