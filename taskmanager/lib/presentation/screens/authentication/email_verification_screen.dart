@@ -60,7 +60,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
-                                const PinVerificationScreen()));
+                                    const PinVerificationScreen()));
                       },
                       child: const Icon(Icons.arrow_circle_right_outlined),
                     ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanager/presentation/screens/progress_task_screen.dart';
-
 import '../utility/app_colors.dart';
 import 'cancelled_task_screen.dart';
 import 'complete_task_screen.dart';

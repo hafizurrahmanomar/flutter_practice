@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:taskmanager/presentation/screens/authentication/splash_screen.dart';
+import 'package:taskmanager/presentation/screens/splash_screen.dart';
 import 'package:taskmanager/presentation/utility/app_colors.dart';
 
 class TaskManager extends StatefulWidget {
@@ -30,7 +30,7 @@ class _TaskManagerState extends State<TaskManager> {
             fillColor: Colors.white,
             filled: true,
             contentPadding:
-                const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             border: OutlineInputBorder(
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(8),
@@ -62,10 +62,8 @@ class _TaskManagerState extends State<TaskManager> {
             titleLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
             bodySmall: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             titleMedium: TextStyle(fontSize: 16, color: Colors.white),
-            titleSmall: TextStyle(fontSize: 12,
-                color: Colors.white,
-                fontWeight: FontWeight.w400),
-
+            titleSmall: TextStyle(
+                fontSize: 12, color: Colors.white, fontWeight: FontWeight.w400),
           ),
 
           ///

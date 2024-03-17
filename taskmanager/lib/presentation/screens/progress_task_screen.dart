@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../wedget/app_background.dart';
 import '../wedget/profile_app_bar.dart';
-import '../wedget/task_card.dart';
 
 class ProgressTaskScreen extends StatefulWidget {
   const ProgressTaskScreen({super.key});
@@ -20,7 +18,7 @@ class _ProgressTaskScreenState extends State<ProgressTaskScreen> {
         child: ListView.builder(
           itemCount: 5,
           itemBuilder: (context, index) {
-            return const TaskCard();
+            // return const TaskCard();
           },
         ),
       ),

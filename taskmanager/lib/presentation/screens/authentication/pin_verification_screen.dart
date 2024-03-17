@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:taskmanager/presentation/screens/authentication/set_password_screen.dart';
@@ -45,7 +44,6 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
                   const SizedBox(
                     height: 24,
                   ),
-
                   PinCodeTextField(
                     controller: _pinTEController,
                     length: 6,
