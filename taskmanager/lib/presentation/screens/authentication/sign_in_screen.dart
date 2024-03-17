@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanager/presentation/screens/authentication/sign_up_screen.dart';
-import 'package:taskmanager/presentation/screens/main_bottom_nav_screen.dart';
-import '../../wedget/app_background.dart';
+import '../../wedget/background_widget.dart';
 import 'email_verification_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -60,12 +59,10 @@ class _SignInScreenState extends State<SignInScreen> {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.pushAndRemoveUntil(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                const MainBottomNavScreen()),
-                                (route) => false);
+                        // Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
+                        //     builder: (
+                        //         context) => const MainBottomNavScreen()), (
+                        //     route) => false);
                       },
                       child: const Icon(Icons.arrow_circle_right_outlined),
                     ),
@@ -86,7 +83,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
-                                    const EmailVerificationScreen()));
+                                const EmailVerificationScreen()));
                       },
                       child: const Text(
                         'Forgot Password?',
