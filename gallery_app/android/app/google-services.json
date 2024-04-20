@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "592550849662",
+    "project_id": "gallery-app-f9ff5",
+    "storage_bucket": "gallery-app-f9ff5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592550849662:android:c6eb3997c519108e54fc2f",
+        "android_client_info": {
+          "package_name": "com.webappdeveloperbd.gallery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmQJHa9lV_VL2IJZJd2T75neBEmfkmDSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592550849662:android:e8533e3b092017a254fc2f",
+        "android_client_info": {
+          "package_name": "com.webdeveloperbd.gallery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmQJHa9lV_VL2IJZJd2T75neBEmfkmDSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
